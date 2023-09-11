@@ -1,7 +1,7 @@
 const fs = require("fs");
 
-fs.readFile("./index.html", (err, data) => {
-    if (err) return console.error(err);
+fs.writeFile("./HelloWorld.txt", "Hello World!", (err, data) => {
+  if (err) return console.error(err);
 
-    console.log(data.toString())
-})
+  console.log(data.toString());
+});
